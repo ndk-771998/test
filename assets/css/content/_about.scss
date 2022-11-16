@@ -1,0 +1,143 @@
+.about {
+    #main {
+        .inner {
+            #notation {
+                padding: 161px 0 0;
+                max-width: 1100px;
+                margin: 0 410px 0;
+                @include pc {
+                    padding: get_pc(161) 0 0;
+                    max-width: get_pc(1100);
+                    margin: 0 get_pc(410) 0;
+                }
+                @include sp {
+                    padding: get_sp(35) 0 0;
+                    max-width: get_sp(350);
+                    margin: 0 auto;
+                }
+                .tlt_section {
+                    margin-bottom: 70px;
+                    @include pc {
+                        margin-bottom: get_pc(70);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(40);
+                    }
+                    h2 {
+                        font-size: 22px;
+                        line-height: 32px;
+                        color: $clr-black;
+                        font-weight: bold;
+
+                        position: relative;
+                        z-index: 2;
+                        display: inline-block;
+                        @include pc {
+                            font-size: get_pc(22);
+                            line-height: get_pc(32);
+                        }
+                        @include sp {
+                            font-size: get_sp(20);
+                            line-height: get_sp(29);
+                        }
+                    }
+                    h2::before{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 12px;
+                        top: 30px;
+                        z-index: 1;
+                        background-color: $clr-normal-purple;
+                        @include pc {
+                            height: get_pc(12);
+                            top: get_pc(30);
+                        }
+                        @include sp {
+                            height: get_sp(7);
+                            top: get_sp(30);
+                        }
+                    }
+                }
+                .table {
+                    margin-bottom: 153px;
+                    @include pc {
+                        margin-bottom: get_pc(153);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(115);
+                    }
+                    table {
+                        tbody {
+                            tr{
+                                width: 100%;
+                                display: table;
+                                th:last-child {
+                                    width: 69%;
+                                    background-color: $clr-bg;
+                                    color: $clr-black;
+                                    text-align: left;
+                                    line-height: 35px;
+                                    @include pc {
+                                        line-height: get_pc(35);
+                                    }
+                                    @include sp {
+                                        line-height: get_sp(20);
+                                    }
+                                }
+                                th {
+                                    &:first-child {
+                                        font-weight: bold;
+                                    }
+                                    p {
+                                        margin-bottom: 30px;
+                                        @include pc {
+                                            margin-bottom: get_pc(30);
+                                        }
+                                        @include sp {
+                                            margin-bottom: get_sp(30);
+                                        }
+                                    }
+                                    p:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                    display: table-cell;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    border-right: 0;
+                                    font-size: 19px;
+                                    line-height: 31px;
+                                    padding: 16px 22px 18.5px;
+                                    width: 31%;
+                                    border: 1px solid $clr-dark-gray;
+                                    border-bottom: 0;
+                                    font-weight: 500;
+                                    background-color: $clr-normal-purple;
+                                    color: $clr-dark-purple;
+                                    @include pc {
+                                        font-size: get_pc(19);
+                                        line-height: get_pc(31);
+                                        padding: get_pc(16) get_pc(22) get_pc(18.5);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(10);
+                                        line-height: get_sp(20);
+                                        padding: get_sp(13) get_sp(5) get_sp(12);
+                                    }
+                                    span {
+                                        @include sp {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            tr:last-child {
+                                border: 1px solid $clr-dark-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

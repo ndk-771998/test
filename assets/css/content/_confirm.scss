@@ -1,0 +1,123 @@
+.confirm {
+    #main {
+        .inner {
+            #confirm {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-top: 160px;
+                padding-bottom: 100px;
+                @include pc {
+                    max-width: get_pc(1000);
+                    padding-top: get_pc(160);
+                    padding-bottom: get_pc(100);
+                }
+                @include sp {
+                    max-width: 100%;
+                    padding: get_sp(93) get_sp(20) get_sp(30);
+                }
+                .inner {
+                    box-shadow: 0px 3px 6px #4D5CB129;
+                    border-radius: 10px;
+                    width: 100%;
+                    padding: 94px 0 159px;
+                    @include pc {
+                        border-radius: get_pc(10);
+                        padding: get_pc(94) 0 get_pc(159);
+                    }
+                    @include sp {
+                        border-radius: get_sp(10);
+                        padding: get_sp(85) get_sp(55) get_sp(152);
+                    }
+                    .thumb {
+                        width: 65px;
+                        height: 65px;
+                        margin: 0 auto;
+                        margin-bottom: 26px;
+                        @include pc {
+                            width: get_pc(65);
+                            height: get_pc(65);
+                            margin-bottom: get_pc(26);
+                        }
+                        @include sp {
+                            width: get_sp(65);
+                            height: get_sp(65);
+                            margin-bottom: get_sp(38);
+                        }
+                    }
+                    h3 {
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-weight: bold;
+                        letter-spacing: 2.2px;
+                        margin-bottom: 23px;
+                        color: $clr-black;
+                        @include pc {
+                            font-size: get_pc(22);
+                            line-height: get_pc(32);
+                            margin-bottom: get_pc(23);
+                        }
+                        @include sp {
+                            font-size: get_sp(20);
+                            line-height: get_sp(29);
+                            margin-bottom: get_sp(21);
+                            letter-spacing: 0;
+                        }
+                    }
+                    h4 {
+                        font-size: 19px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        letter-spacing: 1.9px;
+                        margin-bottom: 13px;
+                        color: $clr-black;
+                        @include pc {
+                            font-size: get_pc(19);
+                            line-height: get_pc(27);
+                            margin-bottom: get_pc(13);
+                        }
+                        @include sp {
+                            font-size: get_sp(16);
+                            line-height: get_sp(25);
+                            margin-bottom: get_sp(21);
+                            letter-spacing: 0;
+                        }
+                        span {
+                            @include sp {
+                                display: block;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 19px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        letter-spacing: 1.9px;
+                        @include pc {
+                            font-size: get_pc(19);
+                            line-height: get_pc(27);
+                        }
+                        @include sp {
+                            font-size: get_sp(16);
+                            line-height: get_sp(25);
+                        }
+                        span {
+                            color: $clr-dark-purple;
+                            @include sp {
+                                display: block;
+                        &:last-child {
+                            margin-bottom: 0;
+                            span {
+                                color: $clr-dark-purple;
+                                @include sp {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+}

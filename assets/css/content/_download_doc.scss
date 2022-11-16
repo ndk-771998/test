@@ -1,0 +1,190 @@
+.download_doc {
+    #main {
+        .inner {
+            #download {
+                .inner {
+                    padding-top: 214px;
+                    max-width: 950px;
+                    margin: 0 auto;
+                    @include pc {
+                        padding-top: get_pc(214);
+                        max-width: get_pc(950);
+                    }
+                    @include sp {
+                        padding:get_sp(26) get_sp(20) 0;
+                        width: 100%;
+                        margin-bottom: get_sp(45);
+                    }
+                    h1 {
+                        @include sp {
+                            padding-bottom: get_sp(21.5);
+                            margin: 0 get_sp(-20) get_sp(36.5);
+                            font-size: get_sp(16);
+                            font-weight: 500;
+                            border-bottom: 1px solid #B7B7B7;
+                        }
+                    }
+                    .item_content {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 58px;
+                        border: 1px solid $clr-bg-tlt;
+                        box-shadow: 2px 2px 10px rgba(77, 92, 177, 0.102);
+                        border-radius: 10px;
+                        @include pc {
+                            padding:0 get_pc(58);
+                            box-shadow: get_pc(2) get_pc(2) get_pc(10) rgba(77, 92, 177, 0.102);
+                            border-radius: get_pc(10);
+                        }
+                        @include sp {
+                            width: 100%;
+                            flex-direction: column;
+                            padding: 0 0 get_sp(61);
+                            box-shadow: get_sp(2) get_sp(2) get_sp(10) rgba(77, 92, 177, 0.102);
+                            border-radius: get_sp(10);
+                        }
+                        .util_sp {
+                            @include sp {
+                                margin-left: get_sp(70);
+                            }
+                            .tlt {
+                                @include sp {
+                                    order: 1;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: get_sp(17);
+                                    padding-top: get_sp(31);
+                                }
+                                h2 {
+                                    @include sp {
+                                        color: $clr-dark-purple;
+                                        @include bgsetup("../images/Exclusion1.png",center center, contain, no-repeat);
+                                        font-size: get_sp(20);
+                                        line-height: get_sp(47);
+                                        width: get_sp(116);
+                                        height: get_sp(47);
+                                        font-weight: bold;
+                                    }
+                                }
+                                span {
+                                    @include sp {
+                                        color: $clr-dark-purple;
+                                        font-weight: bold;
+                                        font-size: get_sp(20);
+                                        line-height: get_sp(29);
+                                    }
+                                }
+                            }
+                        }
+                        .content_detail {
+                            @include sp {
+                                order: 3;
+                            }
+                            .tlt {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 43px;
+                                padding-top: 36px;
+                                @include pc {
+                                    margin-bottom: get_pc(43);
+                                    padding-top: get_pc(36);
+                                }
+                                h2 {
+                                    color: $clr-dark-purple;
+                                    font-size: 19px;
+                                    line-height: 47px;
+                                    @include bgsetup("../images/Exclusion1.png",center center, contain, no-repeat);
+                                    width: 107px;
+                                    height: 47px;
+                                    font-weight: bold;
+                                    @include pc {
+                                        font-size: get_pc(19);
+                                        line-height: get_pc(47);
+                                        width: get_pc(107);
+                                        height: get_pc(47);
+                                    }
+                                }
+                                span {
+                                    font-size: 19px;
+                                    font-weight: bold;
+                                    line-height: 27px;
+                                    color: $clr-dark-purple;
+                                    @include pc {
+                                        font-size: get_pc(19);
+                                        line-height: get_pc(27);
+                                    }
+                                }
+                            }
+                            h3 {
+                                color: $clr-black;
+                                font-size: 19px;
+                                font-weight: 400;
+                                line-height: 27px;
+                                margin:0 0 10px 65px;
+                                @include pc {
+                                    font-size: get_pc(19);
+                                    line-height: get_pc(27);
+                                    margin:0 0 get_pc(10) get_pc(65);
+                                }
+                                @include sp {
+                                    font-size: get_sp(16);
+                                    line-height: get_sp(24);
+                                    margin: 0 0 get_sp(6) get_sp(79);
+                                }
+                            }
+                            .btn {
+                                padding-top: 30px;
+                                @include pc {
+                                    padding-top: get_pc(30);
+                                }
+                                @include sp {
+                                    padding-top: get_sp(17);
+                                }
+                                a {
+                                    width: 358px;
+                                    height: 52px;
+                                    font-size: 19px;
+                                    line-height: 52px;
+                                    @include pc {
+                                        width: get_pc(358);
+                                        height: get_pc(52);
+                                        font-size: get_pc(19);
+                                        line-height: get_pc(52);
+                                    }
+                                    @include sp {
+                                        width: get_sp(308);
+                                        height: get_sp(46);
+                                        font-size: get_sp(14);
+                                        line-height: get_sp(46);
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+                        }
+                        .thumb {
+                            width: 325px;
+                            height: 325px;
+                            @include pc {
+                                width: get_pc(325);
+                                height: get_pc(325);
+                            }
+                            @include sp {
+                                width: get_sp(250);
+                                height: get_sp(180);
+                                margin: 0 auto;
+                                order: 2;
+                                margin-bottom: get_sp(23);
+                                img {
+                                    object-fit: contain;
+                                    width: get_sp(250);
+                                    height: get_sp(180);
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

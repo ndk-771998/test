@@ -1,0 +1,98 @@
+/*
+    common
+*/
+html,
+body {
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: $fonts-noto-san;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    background-color: $clr-bg;
+    &.hidden {
+        height: 100%;
+        overflow: hidden;
+    }
+    @include sp {
+        max-width: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    -webkit-touch-callout:none;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], input[type="url"], select {
+    height: 52px;
+    border: 1px solid $clr-dark-gray;
+    @include sp{
+        height: get_sp(48);
+    }
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], input[type="url"], select, textarea {
+    width: 100%;
+    background: $clr-bg;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 12px 20px;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    @include textSetting(19px, 27px, $clr-black, 400);
+    @include pc {
+        @include textSetting(get_pc(19), get_pc(27), $clr-black, 400);
+        padding: get_pc(12) get_pc(20);
+    }
+    @include sp {
+        padding: get_sp(12) get_sp(20);
+        @include textSetting(get_sp(14), get_sp(20), $clr-black, 400);
+    }
+}
+input[type="submit"] {
+    background-color: $clr-dark-purple;
+    color: $clr-bg;
+    border: none;
+    cursor: pointer;
+}
+button {
+    border: none;
+}   
+
+.util_sp {
+    display: none !important;
+    @include sp {
+        display: block !important;
+    }
+}
+.util_pc {
+    //display: block !important;
+    @include sp {
+        display: none !important;
+    }
+}
+@media print {
+    img {
+        display: none;
+    }
+}

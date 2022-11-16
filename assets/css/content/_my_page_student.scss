@@ -1,0 +1,511 @@
+.page_student {
+    .tlt_section {
+        font-size: 25px;
+        line-height: 47px;
+        @include bgsetup("../images/Exclusion1.png",center center, contain, no-repeat);
+        width: 144px;
+        height: 47px;
+        margin-bottom: 55px;
+        font-weight: bold;
+        color: $clr-dark-purple;
+        @include pc {
+            font-size: get_pc(25);
+            line-height: get_pc(47);
+            width: get_pc(144);
+            height: get_pc(47);
+            margin-bottom: get_pc(55);
+        }
+        @include sp {
+            margin: 0 auto get_sp(30.5);
+            font-size: get_sp(20);
+            line-height: get_sp(40);
+            width: get_sp(116);
+            height: get_sp(40);
+        }
+    }
+    section {
+        max-width: 1050px;
+        width: 100%;
+        margin: 0 auto;
+        @include pc {
+            max-width: get_pc(1050);
+        }
+        @include sp {
+            max-width: 100%;
+        }
+    }
+    #my_page {
+        padding: 161px 0 0;
+        margin-bottom: 130px;
+        @include pc {
+            margin-bottom: get_pc(130);
+            padding: get_pc(161) 0 0;
+        }
+        @include sp {
+            padding: get_sp(25) get_sp(20) 0;
+            margin: 0 auto get_sp(80.5);
+        }
+        .inner {
+            h2 {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 27.5px;
+                color: #000000;
+                text-align: left;
+                font-weight: 400;
+                @include pc {
+                    font-size: get_pc(14);
+                    line-height: get_pc(20);
+                    margin-bottom: get_pc(27.5);
+                }
+                @include sp {
+                    font-size: get_sp(12);
+                    line-height: get_sp(17);
+                    margin-bottom: get_sp(35);
+                    text-align: center
+                }
+            }
+            .list_document {
+                width: 950px;
+                margin: 0 auto;
+                @include pc {
+                    width: get_pc(950);
+                }
+                @include sp {
+                    margin-bottom: get_sp(80);
+                    width: 100%;
+                }
+                ul {
+                    li {
+                        position: relative;
+                        border: 1px solid $clr-bg-tlt;
+                        border-radius: 10px;
+                        margin-bottom: 42px;
+                        box-shadow: 0px 3px 6px #4D5CB129;
+                        @include pc {
+                            border-radius: get_pc(10);
+                            margin-bottom: get_pc(42);
+                        }
+                        @include sp {
+                            width: get_sp(350);
+                            margin: 0 auto get_sp(35);
+                        }
+                        a {
+                            display: block;
+                            padding: 22px 31px;
+                            color: #000000;
+                            @include pc {
+                                padding: get_pc(22) get_pc(31);
+
+                            }
+                            @include sp {
+                                padding: get_sp(18) get_sp(22);
+                            }
+                            .tlt {
+                                margin-bottom: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                @include pc {
+                                    margin-bottom: get_pc(20);
+                                }
+                                @include sp {
+                                    padding: unset;
+                                    order: 3;
+                                    margin-bottom : get_sp(15);
+                                }
+                                h4 {
+                                    @include textSetting(21px, 30px, $clr-dark-purple, bold);
+                                    text-align: left;
+                                    display: flex;
+                                    align-items: center;
+                                    @include pc {
+                                        @include textSetting(get_pc(21), get_pc(30), $clr-dark-purple, bold);
+                                    }
+                                    @include sp {
+                                        color: $clr-dark-purple;
+                                        font-size: get_sp(19);
+                                        line-height: get_sp(27);
+                                    }
+                                    &::before {
+                                        content: "";
+                                        @include bgsetup('../images/rectangle_purple_sp.png', center, contain);
+                                        width: 16px;
+                                        height: 20px;
+                                        display: inline-block;
+                                        margin-right: 6px;
+                                        @include pc {
+                                            margin-right: get_pc(6);
+                                            width: get_pc(16);
+                                            height: get_pc(20);
+                                        }
+                                        @include sp {
+                                            width: get_sp(16);
+                                            height: get_sp(20);
+                                        }
+                                    }
+                                }
+                                h5 {
+                                    font-size: 19px;
+                                    line-height: 30px;
+                                    color: $clr-title-sub;
+                                    font-weight: 500;
+                                    @include pc {
+                                        font-size: get_pc(19);
+                                        line-height: get_pc(30);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(14);
+                                        line-height: get_sp(20);
+                                    }
+                                }
+                            }
+                            h6 {
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $clr-title-sub;
+                                text-align: right;
+                                @include pc {
+                                    line-height: get_pc(24);
+                                    font-size: get_pc(16);
+                                }
+                                @include sp {
+                                    line-height: get_sp(20);
+                                    font-size: get_sp(14);
+                                }
+                                &::after {
+                                    content: '';
+                                    width: 20px;
+                                    height: 4px;
+                                    display: inline-block;
+                                    margin-left: 3px;
+                                    @include bgsetup('../images/icon_see_more.png',center, contain);
+                                    @include pc {
+                                        width: get_pc(20);
+                                        height: get_pc(4);
+                                        margin-left: get_sp(3);
+                                    }
+                                    @include sp {
+                                        margin-left: get_sp(3);
+                                        width: get_sp(20);
+                                        height: get_sp(4);
+                                    }
+                                }
+                            }
+                            p {
+                                font-size: 19px;
+                                line-height: 31px;
+                                margin-bottom: 9px;
+                                text-align: left;
+                                @include pc {
+                                    font-size: get_pc(19);
+                                    line-height: get_pc(31);
+                                    margin-bottom: get_pc(9);
+                                }
+                                @include sp {
+                                    order: 3;
+                                    font-size: get_sp(14);
+                                    line-height: get_sp(25);
+                                    margin-bottom: get_sp(9);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #info_member {
+        margin-bottom: 166px;
+        @include pc {
+            margin-bottom: get_pc(166);
+        }
+        @include sp {
+            margin-bottom: get_sp(89);
+        }
+        .inner {
+            @include sp {
+                padding: get_sp(20);
+            }
+            form {
+                max-width: 950px;
+                margin: 0 auto 45px;
+                width: 100%;
+                padding: 33px 176px 50px;
+                box-shadow: 2px 2px 10px #4D5CB11A;
+                border: 1px solid $clr-bg-tlt;
+                border-radius: 10px;
+                @include pc {
+                    border-radius: get_pc(10);
+                    padding: get_pc(33) get_pc(176) get_pc(50);
+                    max-width: get_pc(950);
+                    margin-bottom: get_pc(45);
+                }
+                @include sp {
+                    max-width: 100%;
+                    padding: get_sp(18) get_sp(20) get_sp(53);
+                    margin-bottom: get_sp(30);
+                }
+                h4 {
+                    @include textSetting(22px, 32px, $clr-black, 500);
+                    padding-bottom: 2px;
+                    border-bottom: 8px solid $clr-normal-purple;
+                    display: inline-block;
+                    margin: 0 auto 22px;
+                    @include pc {
+                        margin-bottom: get_pc(22);
+                        border-bottom: get_pc(8) solid $clr-normal-purple;
+                        @include textSetting(get_pc(22), get_pc(32), $clr-black, 500);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(27);
+                        border-bottom: get_sp(7) solid $clr-normal-purple;
+                        @include textSetting(get_sp(19), get_sp(20), $clr-black, 500);
+                    }
+                    span {
+                        color: $clr-dark-purple;
+                        font-weight: bold;
+                    }
+                }
+                .item_input {
+                    margin-bottom: 30px;
+                    @include pc {
+                        margin-bottom: get_pc(30);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(27);
+                    }
+                    &.list_radio {
+                        .item_radio {
+                            display: flex;
+                            justify-content: flex-start;
+                            label {
+                                &:first-child {
+                                    margin-right: 130px;
+                                    @include pc {
+                                        margin-right: get_pc(130);
+                                    }
+                                    @include sp {
+                                        margin-right: get_sp(75);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .choice {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 47px;
+                    @include pc {
+                        margin-bottom: get_pc(47);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(40);
+                    }
+                    .btn_large {
+                        a {
+                            width: 220px;
+                            @include pc {
+                                width: get_pc(220);
+                            }
+                            @include sp {
+                                width: get_sp(130);
+                            }
+                        }
+                        &:first-child {
+                            margin-right: 30px;
+                            @include pc {
+                                margin-right: get_pc(30);
+                            }
+                            @include sp {
+                                margin-right: get_sp(15);
+                            }
+                        }
+                    }
+                }
+                .progress {
+                    display: flex;
+                    text-align: left;
+                    padding-left: 16px;
+                    position: relative;
+                    align-items: center;
+                    justify-content: space-between;
+                    @include pc {
+                        padding-left: get_pc(16);
+                    }
+                    @include sp {
+                        padding-left: get_sp(16);
+                    }
+                    h5 {
+                        width: fit-content;
+                        font-size: 19px;
+                        line-height: 20px;
+                        color: $clr-black;
+                        font-weight: bold;
+                        @include pc {
+                            font-size: get_pc(19);
+                            line-height: get_pc(20);
+                        }
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(20);
+                        }
+                    }
+                    .progress_line {
+                        width: 452px;
+                        height: 19px;
+                        background-color: $clr-percent-line;
+                        @include pc {
+                            width: get_pc(452);
+                            height: get_pc(19);
+                        }
+                        @include sp {
+                            width: get_sp(212);
+                            height: get_sp(15);
+                        }
+                        .detail_progress {
+                            align-self: flex-end;
+                            height: 100%;
+                            text-align: center;
+                            display: flex;
+                            width: 20%;
+                            background-color: $clr-percent;
+                            justify-content: space-between;
+                            align-items: center;
+                            opacity: 1;
+                            transition: all 0.4s ease-out 0.3s;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        left: 0;
+                        background-color: #C4CCF7;
+                        border-radius: 50%;
+                        @include pc {
+                            width: get_pc(10);
+                            height: get_pc(10);
+                        }
+                        @include sp {
+                            width: get_sp(10);
+                            height: get_sp(10);
+                        }
+                    }
+                }
+            }
+            .info_student {
+                max-width: 950px;
+                margin: 0 auto;
+                padding: 42px 176px 57px;
+                border: 1px solid #C4CCF7;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px #4D5CB11A;
+                @include pc {
+                    margin:0 auto;
+                    max-width: get_pc(950);
+                    border-radius: get_pc(10);
+                    padding: get_pc(42) get_pc(176) get_pc(57);
+                }
+                @include sp {
+                    max-width: 100%;
+                    border-radius: get_sp(10);
+                    padding: get_sp(20) get_sp(20) get_sp(47);
+                }
+                .thumb {
+                    width: 598px;
+                    margin-bottom: 23px;
+                    @include pc {
+                        width: get_pc(598);
+                        margin-bottom: get_pc(23);
+                    }
+                    @include sp {
+                        width: get_sp(310);
+                        margin-bottom: get_sp(19);
+                    }
+                }
+                .btn_download {
+                    color: $clr-dark-purple;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin:0 auto 20px;
+                    padding-bottom: 1px;
+                    border-bottom: 1px solid $clr-dark-purple;
+                    width: fit-content;
+                    display: inline-block;
+                    @include pc {
+                        font-size: get_pc(16);
+                        line-height: get_pc(24);
+                        margin-bottom: get_pc(20);
+                    }
+                    @include sp {
+                        font-size: get_sp(16);
+                        line-height: get_sp(24);
+                        margin-bottom: get_sp(20);
+                    }
+        
+                }
+                h4 {
+                    font-size: 19px;
+                    line-height: 27px;
+                    font-weight: 700;
+                    margin-bottom: 35px;
+                    color: $clr-black;
+                    @include pc {
+                        font-size: get_pc(19);
+                        line-height: get_pc(27);
+                        margin-bottom: get_pc(35);
+                    }
+                    @include sp {
+                        font-size: get_sp(14);
+                        line-height: get_sp(20);
+                        margin-bottom: get_sp(35);
+                    }
+                }
+                .btn_large {
+                    a {
+                        width: 307px;
+                        letter-spacing: 1px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include pc {
+                            width: get_pc(307);
+                            letter-spacing: get_pc(1);
+                        }
+                        @include sp {
+                            width: 100%;
+                        }
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            width: 36px;
+                            height: 4px;
+                            margin-left: 10px;
+                            @include bgsetup('../images/arrow_white_1.png', center, cover);
+                            @include pc {
+                                margin-left: get_pc(10);
+                                width: get_pc(36);
+                                height: get_pc(4);
+                            }
+                            @include sp {
+                                width: get_sp(36);
+                                height: get_sp(4);
+                                @include bgsetup('../images/arrow_white_1_sp.png', center, cover);
+                            }
+                        }
+                        &:hover {
+                            &::after {
+                                @include bgsetup('../images/arrow_purple_1.png', center, cover);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

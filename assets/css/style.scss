@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "config/reset";
+@import "config/fonts";
+@import "config/variables";
+@import "mixin/functions";
+@import "modules/ui";
+@import "modules/anime";
+@import "base/common";
+@import "base/header";
+@import "base/sidebar";
+@import "base/style";
+@import "content/privacy";
+@import "content/price";
+@import "content/price_detail";
+@import "content/about";
+@import "content/list_course";
+@import "content/regular_course";
+@import "content/register";
+@import "content/confirm";
+@import "content/login";
+@import "content/download_doc";
+@import "content/change_password";
+@import "content/my_page_student";
+
+
+

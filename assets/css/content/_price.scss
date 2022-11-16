@@ -1,0 +1,767 @@
+.price, .price-pro, .price-plus {
+    
+    font-family: $fonts-noto-san;
+#main{
+    .inner {
+        #price {
+            padding-top: 191px;
+            @include pc {
+                padding-top: get_pc(191);
+            }
+            @include sp {
+                padding-top: 0;
+            }
+            .inner {
+                width: 950px;
+                margin: 0 auto;
+                @include pc {
+                    width: get_pc(950);
+                }
+                @include sp {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 get_sp(20);
+                }
+                .content {
+                    @include sp {
+                        padding-top: get_sp(35);
+                    }
+                    .plan {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 0 40px;
+                        @include pc {
+                            margin: 0 0 get_pc(40);
+                        }
+                        h2 {
+                            height: 64px;
+                            width: 730px;
+                            font-size: 16px;
+                            line-height: 64px;
+                            text-align: left;
+                            padding-left: 20px;
+                            background-color: $clr-bgr-orange;
+                            border: 1px solid #DB8031;
+                            @include pc {
+                                height: get_pc(64);
+                                width: get_pc(730);
+                                font-size: get_pc(16);
+                                line-height: get_pc(64);
+                                padding-left: get_pc(20);
+                            }
+                        }
+                        button {
+                            font-size: 16px;
+                            line-height: 24px;
+                            background-color: $clr-dark-orange;
+                            color: $clr-bg;
+                            padding: 20px 23px;
+                            border-radius: 5px;
+                            @include pc {
+                                font-size: get_pc(16);
+                                line-height: get_pc(24);
+                                padding: get_pc(20) get_pc(23);
+                                border-radius: get_pc(5);
+                            }
+                        }
+                    }
+                    h3 {
+                        color: $clr-dark-purple;
+                        font-size: 25px;
+                        line-height: 47px;
+                        @include bgsetup("../images/Exclusion1.png",center center, contain, no-repeat);
+                        width: 144px;
+                        height: 47px;
+                        margin-bottom: 55px;
+                        font-weight: bold;
+                        @include pc {
+                            font-size: get_pc(25);
+                            line-height: get_pc(47);
+                            width: get_pc(144);
+                            height: get_pc(47);
+                            margin-bottom: get_pc(55);
+                        }
+                        @include sp {
+                            margin: 0 auto get_sp(30.5);
+                            font-size: get_sp(20);
+                            line-height: get_sp(40);
+                            width: get_sp(116);
+                            height: get_sp(40);
+                        }
+                    }
+                    .list_document {
+                        margin-bottom: 169px;
+                        @include pc {
+                            margin-bottom: get_pc(169);
+                        }
+                        @include sp {
+                            margin-bottom: get_sp(80);
+                        }
+                        li {
+                            position: relative;
+                            margin-bottom: 74px;
+                            @include pc {
+                                border-radius: get_pc(10);
+                                margin-bottom: get_pc(74);
+                            }
+                            @include sp {
+                                border-radius: get_sp(10);
+                                width: 100%;
+                                margin: 0 auto get_sp(35);
+                            }
+                            a {
+                                display: flex;
+                                color: $clr-black;
+                                border: 1px solid $clr-bg-tlt;
+                                box-shadow: 2px 2px 10px rgba(77, 92, 177, 0.102);
+                                border-radius: 10px;
+                                @include pc {
+                                    border-radius: get_pc(10);
+                                }
+                                @include sp {
+                                    flex-direction: column;
+                                    padding: get_sp(23) get_sp(21) 0;
+                                    border-radius: get_sp(10);
+                                    height: 100%;
+                                }
+                                h4 {
+                                    @include sp {
+                                        order: 1;
+                                        font-size: get_sp(19);
+                                        margin-bottom: get_sp(15);
+                                    }
+                                }
+                                .item_content {
+                                    padding: 29px 0 32px 35px;
+                                    @include pc {
+                                        padding: get_pc(29) 0 get_pc(32) get_pc(35);
+                                    }
+                                    @include sp {
+                                        padding: unset;
+                                        order: 3;
+                                    }
+                                    p {
+                                        width: 565px;
+                                        font-size: 19px;
+                                        line-height: 30px;
+                                        margin-bottom: 23px;
+                                        text-align: left;
+                                        @include pc {
+                                            width: get_pc(565);
+                                            font-size: get_pc(19);
+                                            line-height: get_pc(30);
+                                            margin-bottom: get_pc(23);
+                                        }
+                                        @include sp {
+                                            width: 100%;
+                                            font-size: get_sp(14);
+                                            line-height: get_sp(25);
+                                            margin-bottom: get_sp(18);
+                                        }
+                                    }
+                                    .process {
+                                        .time {
+                                            display: flex;
+                                            margin-bottom: 14px;
+                                            padding-left: 16px;
+                                            position: relative;
+                                            align-items: center;
+                                            @include pc {
+                                                margin-bottom: get_pc(14);
+                                                padding-left: get_pc(16);
+                                            }
+                                            @include sp {
+                                                margin-bottom: get_sp(11);
+                                                padding-left: get_sp(16);
+                                            }
+                                            &:before {
+                                                content: "";
+                                                width: 10px;
+                                                height: 10px;
+                                                position: absolute;
+                                                left: 0;
+                                                background-color: $clr-bg-tlt;
+                                                border-radius: 50%;
+                                                @include pc {
+                                                    width: get_pc(10);
+                                                    height: get_pc(10);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(10);
+                                                    height: get_sp(10);
+                                                }
+                                            }
+                                            h5 {
+                                                font-size: 19px;
+                                                line-height: 20px;
+                                                margin-right: 17px;
+                                                font-weight: 500;
+                                                @include pc {
+                                                    font-size: get_pc(19);
+                                                    line-height: get_pc(20);
+                                                    margin-right: get_pc(17);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(16);
+                                                    line-height: get_sp(20);
+                                                    margin-right: get_sp(17);
+                                                }
+                                            }
+                                            h6 {
+                                                font-size: 19px;
+                                                line-height: 20px;
+                                                @include pc {
+                                                    font-size: get_pc(19);
+                                                    line-height: get_pc(20);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(16);
+                                                    line-height: get_sp(20);
+                                                }
+                                            }
+                                        }
+                                        .progress {
+                                            display: flex;
+                                            text-align: left;
+                                            padding-left: 16px;
+                                            position: relative;
+                                            align-items: center;
+                                            @include pc {
+                                                padding-left: get_pc(16)
+                                            }
+                                            @include sp {
+                                                justify-content: space-between;
+                                                padding-left: get_sp(16);
+                                                margin-bottom: get_sp(34);
+                                            }
+                                            &:before {
+                                                content: "";
+                                                width: 10px;
+                                                height: 10px;
+                                                position: absolute;
+                                                left: 0;
+                                                background-color: $clr-bg-tlt;
+                                                border-radius: 50%;
+                                                @include pc {
+                                                    width: get_pc(10);
+                                                    height: get_pc(10);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(10);
+                                                    height: get_sp(10);
+                                                }
+                                            }
+                                            h5 {
+                                                font-size: 19px;
+                                                line-height: 20px;
+                                                margin-right: 50px;
+                                                font-weight: 500;
+                                                @include pc {
+                                                    font-size: get_pc(19);
+                                                    line-height: get_pc(20);
+                                                    margin-right: get_pc(50);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(16);
+                                                    line-height: get_sp(20);
+                                                    margin-right: unset;
+                                                }
+                                            }
+                                            .detail_progress {
+                                                width: 332px;
+                                                height: 19px;
+                                                background-color: $clr-light-gray;
+                                                @include pc {
+                                                    width: get_pc(332);
+                                                    height: get_pc(19);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(166);
+                                                    height: get_sp(19);
+                                                }
+                                                .progress_bar {
+                                                    width: 75px;
+                                                    height: 100%;
+                                                    background-color: $clr-medium-gray;
+                                                    @include pc {
+                                                        width: get_pc(75);
+                                                    }
+                                                    @include sp {
+                                                        width: get_sp(49);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .thumb {
+                                    width: 350px;
+                                    height: 313px;
+                                    @include pc {
+                                        width: get_pc(350);
+                                        height: get_pc(313);
+                                    }
+                                    @include sp {
+                                        width: get_sp(250);
+                                        height: get_sp(180);
+                                        margin: 0 auto get_sp(24);
+                                        order: 2;
+                                    }
+                                    img {
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .free_document {
+                        display: flex;
+                        flex-flow: wrap;
+                        justify-content: space-between;
+                        margin-bottom: 144px;
+                        @include pc {
+                            margin-bottom: get_pc(144);
+                        }
+                        @include sp {
+                            margin-bottom: get_sp(155);
+                        }
+                        li {
+                            width: 400px;
+                            padding: 14px 20px 0;
+                            border: 1px solid $clr-bg-tlt;
+                            box-shadow: 2px 2px 10px rgba(77, 92, 177, 0.102);
+                            border-radius: 10px;
+                            margin-bottom: 40px;
+                            @include pc {
+                                width: get_pc(400);
+                                padding: get_pc(14) get_pc(20) 0;
+                                border-radius: get_pc(10);
+                                margin-bottom: get_pc(40);
+                            }
+                            @include sp {
+                                border-radius: get_sp(10);
+                                margin: 0 auto get_sp(35);
+                                width: 100%;
+                                padding: get_sp(23) get_sp(21) 0;
+                            }
+                            h4 {
+                                margin-bottom: 16px;
+                                @include pc {
+                                    margin-bottom: get_pc(16);
+                                }
+                                @include sp {
+                                    margin-bottom: get_sp(15);
+                                }
+                            }
+                            .thumb {
+                                width: 300px;
+                                height: 180px;
+                                margin: 0 auto 12px;
+                                @include pc {
+                                    width: get_pc(300);
+                                    height: get_pc(180);
+                                    margin: 0 auto get_pc(12)
+                                }
+                                @include sp {
+                                    width: get_sp(300);
+                                    height: get_sp(180);
+                                    margin: 0 auto get_sp(24);
+                                }
+                                img {
+                                    margin: 0 auto;
+                                }
+                            }
+                            p {
+                                font-size: 19px;
+                                text-align: justify;
+                                line-height: 30px;
+                                margin-bottom: 11px;
+                                letter-spacing: -0.2px;
+                                @include pc {
+                                    font-size: get_pc(19);
+                                    line-height: get_pc(30);
+                                    margin-bottom: get_pc(11);
+                                    letter-spacing: get_pc(-0.2);
+                                }
+                                @include sp {
+                                    font-size: get_sp(14);
+                                    line-height: get_sp(25);
+                                    margin-bottom: get_sp(18);
+                                    letter-spacing: get_sp(-0.2);
+                                    text-align: left;
+                                }
+                            }
+                            .process {
+                                margin-bottom: 24px;
+                                @include pc {
+                                    margin-bottom: get_pc(24);
+                                }
+                                @include sp {
+                                    margin-bottom: get_sp(34);
+                                }
+                                .time {
+                                    display: flex;
+                                    margin-bottom: 8px;
+                                    padding-left: 16px;
+                                    position: relative;
+                                    align-items: center;
+                                    @include pc {
+                                        margin-bottom: get_pc(8);
+                                        padding-left: get_pc(16);
+                                    }
+                                    @include sp {
+                                        margin-bottom: get_sp(11);
+                                        padding-left: get_sp(16);
+                                    }
+                                    &:before {
+                                        content: "";
+                                        width: 10px;
+                                        height: 10px;
+                                        position: absolute;
+                                        left: 0;
+                                        background-color: $clr-bg-tlt;
+                                        border-radius: 50%;
+                                        @include pc {
+                                            width: get_pc(10);
+                                            height: get_pc(10);
+                                        }
+                                        @include sp {
+                                            width: get_sp(10);
+                                            height: get_sp(10);
+                                        }
+                                    }
+                                    h5 {
+                                        font-size: 19px;
+                                        line-height: 20px;
+                                        margin-right: 17px;
+                                        font-weight: 500;
+                                        @include pc {
+                                            font-size: get_pc(19);
+                                            line-height: get_pc(20);
+                                            margin-right: get_pc(17);
+                                        }
+                                        @include sp {
+                                            font-size: get_sp(16);
+                                            line-height: get_sp(20);
+                                            margin-right: get_sp(17);
+                                        }
+                                    }
+                                    h6 {
+                                        font-size: 19px;
+                                        line-height: 20px;
+                                        @include pc {
+                                            font-size: get_pc(19);
+                                            line-height: get_pc(20);
+                                        }
+                                        @include sp {
+                                            font-size: get_sp(16);
+                                            line-height: get_sp(20);
+                                        }
+                                    }
+                                }
+                                .progress {
+                                    display: flex;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    position: relative;
+                                    align-items: center;
+                                    @include pc {
+                                        padding-left: get_pc(16);
+                                    }
+                                    @include sp {
+                                        padding-left: get_sp(16);
+                                        justify-content: space-between;
+                                    }
+                                    &:before {
+                                        content: "";
+                                        width: 10px;
+                                        height: 10px;
+                                        position: absolute;
+                                        left: 0;
+                                        background-color: $clr-bg-tlt;
+                                        border-radius: 50%;
+                                        @include pc {
+                                            width: get_pc(10);
+                                            height: get_pc(10);
+                                        }
+                                        @include sp {
+                                            width: get_sp(10);
+                                            height: get_sp(10);
+                                        }
+                                    }
+                                    h5 {
+                                        font-size: 19px;
+                                        line-height: 20px;
+                                        margin-right: 50px;
+                                        font-weight: 500;
+                                        @include pc {
+                                            font-size: get_pc(19);
+                                            line-height: get_pc(20);
+                                            margin-right: get_pc(50);
+                                        }
+                                        @include sp {
+                                            font-size: get_sp(16);
+                                            line-height: get_sp(20);
+                                            margin-right: unset;
+                                        }
+                                    }
+                                    .detail_progress {
+                                        width: 193px;
+                                        height: 19px;
+                                        background-color: $clr-light-gray;
+                                        @include pc {
+                                            width: get_pc(193);
+                                            height: get_pc(19);
+                                        }
+                                        @include sp {
+                                            width: get_sp(166);
+                                            height: get_sp(19);
+                                        }
+                                        .progress_bar {
+                                            width: 175px;
+                                            height: 100%;
+                                            background-color: $clr-medium-gray;
+                                            @include pc {
+                                                width: get_pc(175);
+                                            }
+                                            @include sp {
+                                                width: get_sp(143);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #price_list {
+            display: none;
+            padding-top: 191px;
+            @include pc {
+                padding-top: get_pc(191);
+            }
+            @include sp {
+                padding-top: get_sp(35);
+            }
+            .inner {
+                max-width: 1030px;
+                width: 100%;
+                margin: 0 auto;
+                @include pc {
+                    max-width: get_pc(1030);
+                }
+                .test {
+                    margin-bottom: 130px;
+                    @include pc {
+                        margin-bottom: get_pc(130);
+                    }
+                    @include sp {
+                        width: get_sp(350);
+                        margin: 0 auto get_sp(81);
+                    }
+                    .title_price_list {
+                        margin-left: 0;
+                    }
+                    .form {
+                        width: 950px;
+                        margin: 0 auto;
+                        padding: 44px 62px 0;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 10px rgba(77, 92, 177, 0.102);
+                        border: 1px solid #C4CCF7;
+                        @include pc {
+                            width: get_pc(950);
+                            padding: get_pc(44) get_pc(62) 0;
+                            border-radius: get_pc(10);
+                        }
+                        @include sp {
+                            width: get_sp(350);
+                            padding: get_sp(20) get_sp(15) get_sp(46);
+                            margin: 0;
+                        }
+                        p {
+                            text-align: justify;
+                            margin-bottom: 35px;
+                            line-height: 31px;
+                            font-size: 19px;
+                            font-weight: 400;
+                            @include pc {
+                                margin-bottom: get_pc(35);
+                                line-height: get_pc(31);
+                                font-size: get_pc(19);
+                            }
+                            @include sp {
+                                font-size: get_sp(14);
+                                line-height: get_sp(25);
+                                margin-bottom: get_sp(35);
+                            }
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                        textarea {
+                            width: 100%;
+                            height: 194px;
+                            resize: none;
+                            margin-bottom: 47px;
+                            border: 1px solid #C3C3C3;
+                            @include pc {
+                                height: get_pc(194);
+                                margin-bottom: get_pc(47);
+                            }
+                            @include sp {
+                                height: get_sp(200);
+                            }
+                        }
+                        input {
+                            width: 220px;
+                            height: 52px;
+                            font-size: 19px;
+                            line-height: 27px;
+                            margin-bottom: 69px;
+                            border-radius: 10px;
+                            background-color: $clr-bg;
+                            color: $clr-dark-purple;
+                            font-weight: bold;
+                            border: 2px solid $clr-dark-purple;
+                            @include pc {
+                                width: get_pc(220);
+                                height: get_pc(52);
+                                font-size: get_pc(19);
+                                line-height: get_pc(27);
+                                margin-bottom: get_pc(69);
+                                border-radius: get_pc(10);
+                            }
+                            @include sp {
+                                width: get_sp(186);
+                                height: get_sp(46);
+                                font-size: get_sp(16);
+                                line-height: get_sp(24);
+                                margin-bottom: 0;
+                                border-radius: get_sp(10);
+                            }
+                        }
+                    }
+                }
+                .interview_test {
+                    a {
+                        width: 530px;
+                        padding: 24px 0;
+                        display: flex;
+                        margin: 0 auto 130px;
+                        border-radius: 60px;
+                        justify-content: center;
+                        align-items: center;
+                        @include textSetting(22px, 32px, $clr-bg, bold, 1.1px);
+                        @include pc {
+                            @include textSetting(get_pc(22), get_pc(32), $clr-bg, bold, get_pc(1.1));
+                            width: get_pc(530);
+                            padding: get_pc(24) 0;
+                            margin: 0 auto get_pc(130);
+                            border-radius: get_pc(60);
+                        }
+                        @include sp {
+                            width: get_sp(330);
+                            padding: get_sp(23) 0;
+                            margin: 0 auto get_sp(71);
+                            border-radius: get_sp(120);
+                            @include textSetting(get_sp(16), get_sp(24), $clr-bg, bold, get_sp(0.8));
+                        }
+                        &::after {
+                            content: '';
+                            @include bgsetup("../images/arrow_white.svg", center, cover);
+                            width: 50px;
+                            height: 10px;
+                            display: inline-block;
+                            margin-left: 40px;
+                            @include pc {
+                                margin-left: get_pc(40);
+                                width: get_pc(50);
+                                height: get_pc(10);
+                            }
+                            @include sp {
+                                margin-left: get_sp(30);
+                                width: get_sp(30);
+                                height: get_sp(5);
+                            }
+                        }
+                        &:hover {
+                            color: $clr-dark-purple;
+                            &::after {
+                                @include bgsetup("../images/arrow_purple.svg", center, cover);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .title_price_list {
+        color: $clr-dark-purple;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 47px;
+        @include bgsetup("../images/Exclusion1.png",center center, cover, no-repeat);
+        width: 178px;
+        height: 47px;
+        margin:0 auto 41px 0;
+        @include pc {
+            font-size: get_pc(25);
+            line-height: get_pc(47);
+            width: get_pc(178);
+            height: get_pc(47);
+            margin:0 auto get_pc(41) 0;
+        }
+        @include sp {
+            margin: 0 auto get_sp(30.5);
+            font-size: get_sp(20);
+            line-height: get_sp(40);
+            width: get_sp(136);
+            height: get_sp(40);
+        }
+    }
+    .title_form {
+        font-size: 22px;
+        margin-bottom: 41px;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        font-weight: bold;
+        color: $clr-dark-purple;
+        @include pc {
+            font-size: get_pc(22);
+            margin-bottom: get_pc(41);
+        }
+        @include sp {
+            font-size: get_sp(20);
+            margin-bottom: get_sp(20);
+            line-height: get_sp(25);
+        }
+        &:before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 100%;
+            height: 12px;
+            left: 0;
+            top: 24px;
+            z-index: 1;
+            background-color: $clr-normal-purple;
+            @include pc {
+                height: get_pc(12);
+                top: get_pc(24);
+            }
+            @include sp {
+                width: get_sp(80);
+                height: get_sp(7);
+                left: 50%;
+                transform: translateX(-50%);
+                top: get_sp(28);
+            }
+        }
+    }
+}
+}

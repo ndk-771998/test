@@ -1,0 +1,1446 @@
+.hr_section_ {
+    position: relative;
+}
+.hr_section_::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -60px;
+    transform: translateX(-50%);
+    background-color: #C4CCF7;
+    @include pc {
+        width: 100%;
+        bottom: get_pc(-60);
+    }
+    @include sp {
+        width: 112%;
+        bottom: get_sp(-12);
+    }
+}
+.tlt_chapter {
+    color: $clr-dark-purple;
+    font-size: 23px;
+    line-height: 34px;
+    margin-bottom: 38px;
+    position: relative;
+    padding-left: 31px;
+    margin-top: 0;
+    @include pc {
+        font-size: get_pc(23);
+        line-height: get_pc(34);
+        margin-bottom: get_pc(38);
+        padding-left: get_pc(31);
+    }
+    @include sp {
+        font-size: get_sp(19);
+        line-height: get_sp(27);
+        margin-bottom: get_sp(15);
+        padding-left: get_sp(33);
+    }
+}
+.tlt_chapter::before {
+    content: "";
+    border-width: 11.5px 16px;
+    left: 0;
+    top: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent $clr-bg-tlt;
+    position: absolute;
+    @include pc {
+        border-width: get_pc(11.5) get_pc(16);
+        top: get_pc(5);
+    }
+    @include sp {
+        border-width: get_sp(11.5) get_sp(16);
+        top: get_sp(2);
+    }
+}
+.detail {
+    font-family: $fonts-noto-san;
+    #main {
+        > .inner {
+            display: flex;
+            margin: 0 auto;
+            max-width: 1300px;
+            justify-content: center;
+            @include pc {
+                max-width: get_pc(1300);
+            }
+            @include sp {
+                padding: get_sp(20) get_sp(20) 0;
+                max-width: 100%;
+            }
+            .wrapper_section {
+                max-width: 1030px;
+                padding-bottom: 100px;
+                @include pc {
+                    padding-bottom: get_pc(100);
+                    max-width: get_pc(1030);
+                }
+                @include sp {
+                    padding: get_sp(20) 0 get-sp(40);
+                    max-width: 100%;
+                }
+                #price_detail {
+                    padding: 200px 0 0;
+                    min-width: 1030px;
+                    margin: 0 auto 44px;
+                    @include pc {
+                        padding: get_pc(200) 0 0;
+                        min-width: get_pc(1030);
+                        margin: 0 auto get_pc(44);
+                    }
+                    @include sp {
+                        padding: get_sp(20) 0 0;
+                        min-width: 100%;
+                        margin: 0 auto get_sp(35);
+                    }
+                    .inner {
+                        h2 {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 27.5px;
+                            color: $clr-black;
+                            text-align: left;
+                            @include pc {
+                                font-size: get_pc(14);
+                                line-height: get_pc(20);
+                                margin-bottom: get_pc(27.5);
+                            }
+                            @include sp {
+                                font-size: get_sp(12);
+                                line-height: get_sp(17);
+                                margin-bottom: get_sp(36.5);
+                                text-align: center
+                            }
+                        }
+                        .content_description {
+                            h3 {
+                                @include bgsetup("../images/Exclusion3_pc.png",center center, contain, no-repeat);
+                                font-size: 25px;
+                                line-height: 36px;
+                                width: 111px;
+                                margin-bottom: 54.5px;
+                                padding: 5.5px;
+                                color: $clr-dark-purple;
+                                font-weight: bold;
+                                @include pc {
+                                    font-size: get_pc(25);
+                                    line-height: get_pc(36);
+                                    width: get_pc(111);
+                                    margin-bottom: get_pc(54.5);
+                                    padding: get_pc(5.5);
+                                }
+                                @include sp {
+                                    font-size: get_sp(20);
+                                    line-height: get_sp(29);
+                                    width: get_sp(91);
+                                    margin: 0 auto get_sp(24.5);
+                                    padding: get_sp(5.5) 0 get_sp(5.5);
+                                }
+                            }
+                            .description_ {
+                                max-width: 950px;
+                                margin: 0 auto;
+                                border: 1px solid $clr-bg-tlt;
+                                box-shadow: 0px 3px 6px #4D5CB129;
+                                border-radius: 10px;
+                                @include pc {
+                                    max-width: get_pc(950);
+                                    border-radius: get_pc(10);
+                                    margin:0 auto 0;
+                                }
+                                @include sp {
+                                    max-width: 100%;
+                                    border-radius: get_sp(10);
+                                    padding: 0;
+                                    margin-bottom: get_sp(25);
+                                }
+                                .chapter_description {
+                                    padding: 34px 30px 20px;
+                                    text-align: left;
+                                    margin:0 auto 0;
+                                    max-width: 950px;
+                                    width: 100%;
+                                    border-bottom: 1px solid #C4CCF7;
+                                    @include pc {
+                                        max-width: get_pc(950);
+                                        padding: get_pc(34) get_pc(30) get_pc(20);
+                                        margin:0 auto 0;
+                                    }
+                                    @include sp {
+                                        max-width: 100%;
+                                        padding: get_sp(25) get_sp(20) get_sp(25);
+                                        margin-bottom: get_sp(25);
+                                    }
+                                    .item_chapter {
+                                        margin-bottom: 40px;
+                                        @include pc {
+                                            margin-bottom: get_pc(40);
+                                        }
+                                        @include sp {
+                                            margin-bottom: get_sp(21);
+                                        }
+                                        h4 {
+                                            font-size: 21px;
+                                            line-height: 31px;
+                                            color: $clr-black;
+                                            margin-bottom: 20px;
+                                            font-weight: bold;
+                                            @include pc {
+                                                font-size: get_pc(21);
+                                                line-height: get_pc(31);
+                                                margin-bottom: get_pc(20);
+                                            }
+                                            @include sp {
+                                                font-size: get_sp(14);
+                                                line-height: get_sp(25);
+                                                margin-bottom: get_sp(15);
+                                            }
+                                        }
+                                        .txt_chapter {
+                                            margin-bottom: 20px;
+                                            @include pc {
+                                                margin-bottom: get_pc(20);
+                                            }
+                                            @include sp {
+                                                margin-bottom: get_sp(25);
+                                            }
+                                            p {
+                                                font-size: 19px;
+                                                line-height: 31px;
+                                                color: $clr-black;
+                                                @include pc {
+                                                    font-size: get_pc(19);
+                                                    line-height: get_pc(31);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(14);
+                                                    line-height: get_sp(25);
+                                                }
+                                                .tlt_num {
+                                                    margin-left: 0;
+                                                    font-weight: bold;
+                                                    @include pc {
+                                                        margin-left: get_pc(0);
+                                                    }
+                                                    @include sp {
+                                                        margin-left: get_sp(22);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .thumb {
+                                            width: 100%;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                        .video_instruction {
+                                            margin-bottom: 40px;
+                                            @include pc {
+                                                margin-bottom: get_pc(40);
+                                            }
+                                            @include sp {
+                                                margin-bottom: get_sp(31);
+                                            }
+                                            video {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .checkbox_section {
+                                    max-width: 950px;
+                                    padding: 60px 30px 85px 30px;
+                                    @include pc {
+                                        padding: get_pc(60) get_pc(30) get_pc(59) get_pc(30);
+                                        border-radius: get_pc(10);
+                                        max-width: 950px;
+                                    }
+                                    @include sp {
+                                        max-width: 100%;
+                                        padding: get_sp(20) get_sp(19) get_sp(49);
+                                        border-radius: get_sp(10);
+                                    }
+                                    .tlt_chapter {
+                                        margin-bottom: 40px;
+                                        @include pc {
+                                            margin-bottom: get_pc(40);
+                                        }
+                                        @include sp {
+                                            margin-bottom: get_sp(20);
+                                        }
+                                    }
+                                    .txt_chapter {
+                                        font-size: 19px;
+                                        line-height: 31px;
+                                        @include pc {
+                                            font-size: get_pc(19);
+                                            line-height: get_pc(31);
+                                        }
+                                        @include sp {
+                                            font-size: get_sp(14);
+                                            line-height: get_sp(25);
+                                        }
+                                        p {
+                                            color: $clr-black;
+                                            margin-bottom: 15px;
+                                            text-align: left;
+                                            @include pc {
+                                                margin-bottom: get_pc(15);
+                                            }
+                                            @include sp {
+                                                margin-bottom: get_sp(11);
+                                            }
+                                            .tlt_num {
+                                                color: #000000;
+                                                display: inline-block;
+                                                line-height: 31px;
+                                                margin-right: 8px;
+                                                font-weight: bold;
+                                                font-size: 21px;
+                                                @include pc {
+                                                    margin-right: get_pc(8);
+                                                    line-height: get_pc(31);
+                                                    font-size: get_pc(21);
+                                                }
+                                                @include sp {
+                                                    margin-right: 0;
+                                                    line-height: get_sp(25);
+                                                    font-size: get_sp(14);
+                                                }
+                                            }
+                                        }
+                                        .txt_chapter_{
+                                            display: flex;
+                                            @include sp {
+                                                align-items: flex-start;
+                                                justify-content: space-between;
+                                                padding-right: get_sp(28);
+                                            }
+                                            h4 {
+                                                background-color: $clr-normal-purple;
+                                                margin-right: 30px;
+                                                color: $clr-black;
+                                                padding: 5px;
+                                                margin-bottom: 0;
+                                                font-weight: bold;
+                                                @include pc {
+                                                    margin-right: get_pc(30);
+                                                    padding: get_pc(5);
+                                                }
+                                                @include sp {
+                                                    margin-right: 0;
+                                                    padding: get_sp(5);
+                                                    display: block;
+                                                    flex: 0.155;
+                                                }
+        
+                                            }
+                                            .thumb {
+                                                width: 40px;
+                                                height: 40px;
+                                                @include pc {
+                                                    width: get_pc(40);
+                                                    height: get_pc(40);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(32);
+                                                    height: get_sp(32);
+                                                }
+                                            }
+                                            ul {
+                                                font-size: 19px;
+                                                line-height: 30px;
+                                                color: $clr-black;
+                                                display: -webkit-box;
+                                                @include pc {
+                                                    font-size: get_pc(19);
+                                                    line-height: get_pc(30);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(16);
+                                                    line-height: get_sp(30);
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    flex-direction: row;
+                                                    flex-wrap: wrap;
+                                                    flex: 0.7;
+                                                }
+                                                li {
+                                                    margin-right: 59px;
+                                                    @include pc {
+                                                        margin-right: get_pc(59);
+                                                    }
+                                                    @include sp {
+                                                        margin-right: 0;
+                                                    }
+                                                    p {
+                                                        background-color: $clr-normal-purple;
+                                                        margin-right: 30px;
+                                                        color: $clr-black;
+                                                        padding: 5px;
+                                                        margin-bottom: 0;
+                                                        @include pc {
+                                                            margin-right: get_pc(30);
+                                                            padding: get_pc(5);
+                                                        }
+                                                        @include sp {
+                                                            margin-right: get_sp(30);
+                                                            padding: get_sp(5);
+                                                        }
+                                                    }
+                                                    label {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        @include pc {
+                                                            display: flex;
+                                                            align-items: center;
+                                                        }
+                                                        @include sp {
+                                                            display: flex;
+                                                            align-items: center;
+                                                        }
+                                                        input {
+                                                            width: 25px;
+                                                            height: 25px;
+                                                            cursor: pointer;
+                                                            margin-right: 15px;
+                                                            @include pc {
+                                                                margin-right: get_pc(15);
+                                                                width: get_pc(25);
+                                                                height: get_pc(25);
+                                                            }
+                                                            @include sp {
+                                                                margin-right: get_sp(10);
+                                                                width: get_sp(25);
+                                                                height: get_sp(25);
+                                                                margin: 0;
+                                                            }
+                                                        }
+                                                        span {
+                                                            background-color: $clr-bg;
+                                                            color: $clr-black;
+                                                            padding: 5px;
+                                                            @include pc {
+                                                                padding: get_pc(5);
+                                                                text-align: left;
+                                                                padding: 5px;
+                                                            }
+                                                            @include sp {
+                                                                padding: get_sp(5);
+                                                                margin: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .txt_chapter_:last-child {
+                                            h4{
+                                                margin-bottom: 25px;
+                                                @include pc {
+                                                    margin-bottom: get_pc(25);
+                                                }
+                                                @include sp {
+                                                    margin-bottom: get_pc(18);
+                                                }
+                                            }
+                                        }
+                                        .tlt_item{
+                                            &.txt_chapter_ {
+                                                @include sp {
+                                                    padding-right: 0;
+                                                    justify-content: unset;
+                                                }
+                                                h4 {
+                                                    @include sp {
+                                                        flex: unset;
+                                                        margin-right: get_sp(30);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .item_input {
+                                            &.list_radio {
+                                                display: flex;
+                                                align-items: center;
+                                                @include sp {
+                                                    align-items: flex-start;
+                                                }
+                                                .tlt_item {
+                                                    background-color: $clr-normal-purple;
+                                                    margin-right: 30px;
+                                                    color: $clr-black;
+                                                    padding: 5px;
+                                                    margin-bottom: 0;
+                                                    font-weight: bold;
+                                                    @include pc {
+                                                        margin-right: get_pc(30);
+                                                        padding: get_pc(5);
+                                                    }
+                                                    @include sp {
+                                                        padding: get_sp(5);
+                                                    }
+                                                }
+                                                .item_radio {
+                                                    display: flex;
+                                                    @include sp {
+                                                        justify-content: space-between;
+                                                        flex-wrap: wrap;
+                                                        flex: 0.8;
+                                                        display: flex;
+                                                    }
+                                                    label {
+                                                        margin-right: 59px;
+                                                        @include pc {
+                                                            margin-right: get_pc(59);
+                                                        }
+                                                        @include sp {
+                                                            margin-right: get_sp(0);
+                                                            margin-bottom: get_sp(24);
+                                                            align-items: center;
+                                                        }
+                                                        span {
+                                                            @include sp {
+                                                                padding: get_sp(3);
+                                                                font-size: get_sp(16);
+                                                                line-height: get_sp(30);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .item_field { 
+                                                padding: 30px 0 0;
+                                                margin-bottom: 55px;
+                                                @include pc {
+                                                    padding: get_pc(30) 0 0;
+                                                    margin-bottom: get_pc(55);
+                                                }
+                                                @include sp {
+                                                    padding: get_sp(18) 0 0;
+                                                    margin-bottom: get_sp(43);
+                                                }
+                                                textarea {
+                                                    width: 100%;
+                                                    height: 90px;
+                                                    resize: none;
+                                                    @include pc {
+                                                        height: get_pc(90);
+                                                    }
+                                                    @include sp {
+                                                        height: get_sp(90);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .txt_textarea {
+                                            padding: 25px 90px 0;
+                                            @include pc {
+                                                padding: get_pc(20) get_pc(90) 0;
+                                            }
+                                            @include sp {
+                                                padding: get_sp(18) 0 0;
+                                            }
+                                            textarea {
+                                                width: 804px;
+                                                margin: 0 auto;
+                                                resize: none;
+                                                margin-bottom: 55px;
+                                                @include pc {
+                                                    width: get_pc(804);
+                                                    margin-bottom: get_pc(55);
+                                                }
+                                                @include sp {
+                                                    width: 100%;
+                                                    margin-bottom: get_sp(43);
+                                                }
+                                            }
+                                        }
+                                        .btn_outline {
+                                            a {
+                                                width: 220px;
+                                                margin: 0 auto;
+                                                margin-bottom: 107px;
+                                                @include pc {
+                                                    width: get_pc(220);
+                                                    margin-bottom: get_pc(107);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(186);
+                                                    margin-bottom: get_sp(85);
+                                                }
+                                            }
+                                        }
+                                        &.hr_section_ {
+                                            @include sp{
+                                                padding-bottom: get_sp(20);
+                                            }
+                                            ul {
+                                                li:first-child {
+                                                    background-color: #EBEEFF;
+                                                    color: #000;
+                                                    padding: 5px;
+                                                    margin-bottom: 0;
+                                                    font-weight: bold;
+                                                    width: 67px;
+                                                    margin-bottom: 28px;
+                                                    @include pc {
+                                                        padding: get_pc(5);
+                                                        width: get_pc(67);
+                                                        margin-bottom: get_pc(28);
+                                                    }
+                                                    @include sp {
+                                                        padding: get_sp(5);
+                                                        width: get_sp(52);
+                                                        margin-bottom: get_sp(39);
+                                                    }
+                                                    p {
+                                                        margin-bottom: 0;
+                                                    }
+                                                }
+                                                li {
+                                                    p {
+                                                        .tlt_num {
+                                                            margin-right: 20px;
+                                                            font-size: 19px;
+                                                            line-height: 31px;
+                                                            font-weight: unset;
+                                                            @include pc {
+                                                                margin-right: get_pc(20);
+                                                                font-size: get_pc(19);
+                                                                line-height: get_pc(31);
+                                                            }
+                                                            @include sp {
+                                                                margin-right: get_sp(16);
+                                                                font-size: get_sp(16);
+                                                                line-height: get_sp(30);
+                                                            }
+                                                        }
+                                                        .green {
+                                                            color: $clr-green-1;
+                                                        }
+                                                        .red {
+                                                            color: $clr-red-1;
+                                                        }
+                                                        .black {
+                                                            color: $clr-black;
+                                                            display: block;
+                                                            margin-left: 45px;
+                                                            @include pc {
+                                                                margin-left: get_pc(45);
+                                                            }
+                                                            @include sp {
+                                                                margin-left: get_sp(38);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .progress {
+                                        display: flex;
+                                        text-align: left;
+                                        padding-left: 20px;
+                                        position: relative;
+                                        align-items: center;
+                                        margin-bottom: 47px;
+                                        @include pc {
+                                            padding-left: get_pc(20);
+                                            margin-bottom: get_pc(47);
+                                        }
+                                        @include sp {
+                                            padding-left: get_sp(20);
+                                            margin-bottom: get_sp(35);
+                                        }
+                                        h5 {
+                                            font-size: 19px;
+                                            line-height: 20px;
+                                            color: $clr-black;
+                                            font-weight: bold;
+                                            margin-right: 30px;
+                                            width: 112px;
+                                            @include pc {
+                                                font-size: get_pc(19);
+                                                line-height: get_pc(20);
+                                                margin-right: get_pc(30);
+                                                width: get_pc(112);
+                                            }
+                                            @include sp {
+                                                font-size: get_sp(14);
+                                                line-height: get_sp(20);
+                                                margin-right: get_sp(16);
+                                                width: get_sp(106);
+                                            }
+                                        }
+                                        .detail_progress {
+                                            width: 100%;
+                                            height: 19px;
+                                            background-color: $clr-light-gray;
+                                            @include pc {
+                                                height: get_pc(19);
+                                            }
+                                            @include sp {
+                                                height: get_sp(15);
+                                            }
+                                            .progress_bar {
+                                                width: 140px;
+                                                height: 100%;
+                                                background-color: $clr-medium-gray;
+                                                @include pc {
+                                                    width: get_pc(140);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(75);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .progress::before {
+                                        content: "";
+                                        width: 10px;
+                                        height: 10px;
+                                        position: absolute;
+                                        left: 0;
+                                        background-color: $clr-bg-tlt;
+                                        border-radius: 50%;
+                                        @include pc {
+                                            width: get_pc(10);
+                                            height: get_pc(10);
+                                        }
+                                        @include sp {
+                                            width: get_sp(10);
+                                            height: get_sp(10);
+                                        }
+                                    }
+                                    .btn_submit {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        .btn, .btn_outline {
+                                            a {
+                                                width: 315px;
+                                                border-radius: 5px;
+                                                @include pc {
+                                                    width: get_pc(315);
+                                                }
+                                                @include sp {
+                                                    width: get_sp(150);
+                                                    padding: get_sp(14) 0;
+                                                    @include textSetting(get_sp(12), get_sp(17));
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .hr_section {
+                                        position: relative;
+                                        display: inline-block;
+                                    }
+                                    .hr_section::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 80%;
+                                        height: 1px;
+                                        bottom: -50px;
+                                        transform: translateX(-50%);
+                                        background-color: #707070;
+                                        @include pc {
+                                            width: 80%;
+                                            bottom: get_pc(-50);
+                                        }
+                                        @include sp {
+                                            width: 100%;
+                                            bottom: get_sp(-12);
+                                        }
+                                    }
+                                }
+                                .btn_outline {
+                                    a{
+                                        width: 220px;
+                                        margin: 0 auto;
+                                        margin-bottom: 107px;
+                                        @include pc {
+                                            width: get_pc(220);
+                                            margin-bottom: get_pc(107);  
+                                        }
+                                        @include sp {
+                                            width: get_sp(186);
+                                            margin-bottom: get_sp(85);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .register_member {
+                    max-width: 950px;
+                    width: 100%;
+                    margin: 0 auto;
+                    @include pc {
+                        max-width: get_pc(950);
+                    }
+                    @include sp {
+                        max-width: 100%;
+                    }
+                    h5 {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $clr-dark-purple;
+                        font-weight: bold;
+                        position: relative;
+                        display: inline-block;
+                        margin-bottom: 39px;
+                        @include pc {
+                            font-size: get_pc(16);
+                            line-height: get_pc(24);
+                            margin-bottom: get_pc(39);
+                        }
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(20);
+                            margin-bottom: get_sp(24);
+                        }
+                    }
+                    h5::before{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        top: 22px;
+                        z-index: 1;
+                        background-color: $clr-dark-purple;
+                        @include pc {
+                            height: get_pc(3);
+                            top: get_pc(22);
+                        }
+                        @include pc {
+                            height: get_pc(3);
+                            top: get_pc(20);
+                        }
+                    }
+                    .btn_detail {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 37px;
+                        align-items: center;
+                        @include pc {
+                            margin-bottom: get_pc(37);
+                        }
+                        @include sp {
+                            padding: 0;
+                            justify-content: space-between;
+                            margin-bottom: get_sp(30);
+                        }
+                        .btn, .btn_outline {
+                            a {
+                                width: 186px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                border-radius: 5px;
+                                font-weight: bold;
+                                display: block;
+                                @include pc {
+                                    width: get_pc(186);
+                                    font-size: get_pc(16);
+                                    line-height: get_pc(24);
+                                    border-radius: get_pc(5);
+                                }
+                                @include sp {
+                                    width: get_sp(100);
+                                    font-size: get_sp(16);
+                                    line-height: get_sp(24);
+                                    border-radius: get_sp(5);
+                                }
+                            }
+                        }
+                        p {
+                            margin: 0 88px;
+                
+                            padding-top: 11px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #000000;
+                            letter-spacing: 1.6px;
+                            @include pc {
+                                padding-top: get_pc(11);
+                                font-size: get_pc(16);
+                                line-height: get_pc(24);
+                                margin: 0 get_pc(88);
+                
+                            }
+                            @include sp {
+                                padding-top: get_sp(10);
+                                font-size: get_sp(14);
+                                line-height: get_sp(20);
+                                margin: 0;
+                            }
+                            p {
+                                padding-top: 11px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $clr-black;
+                                letter-spacing: 1.6px;
+                                @include pc {
+                                    padding-top: get_pc(11);
+                                    font-size: get_pc(16);
+                                    line-height: get_pc(24);
+                                }
+                                @include sp {
+                                    padding-top: get_sp(10);
+                                    font-size: get_sp(14);
+                                    line-height: get_sp(20);
+                                }
+                            }
+                        }
+                    }
+                }
+                .chapter_quiz {
+                    text-align: left;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $clr-dark-gray-1;
+                    position: relative;
+                    padding-left: 24px;
+                    @include pc {
+                        font-size: get_pc(16);
+                        line-height: get_pc(24);
+                        padding-left: get_pc(24);
+                    }
+                    @include sp {
+                        font-size: get_sp(14);
+                        line-height: get_sp(20);
+                        padding-left: get_sp(16);
+                    }
+                }
+                .chapter_quiz::before {
+                    content: "";
+                    @include bgsetup("../images/ic_arrow_left_pc.png",center center, contain, no-repeat);
+                    width: 11px;
+                    height: 11px;
+                    top: 7px;
+                    position: absolute;
+                    left: 0;
+                    @include pc {
+                        width: get_pc(11);
+                        height: get_pc(11);
+                        top: get_pc(7);
+                    }
+                    @include sp {
+                        width: get_sp(13);
+                        height: get_sp(13);
+                        top: get_sp(5);
+                    }
+                }
+            }
+        }
+    }
+}
+.txt_chapter {
+    font-size: 19px;
+    line-height: 31px;
+    padding: 0 30px 0 30px;
+    @include pc {
+        font-size: get_pc(19);
+        line-height: get_pc(31);
+        padding: 0 get_pc(30) 0 get_pc(30);
+    }
+    @include sp {
+        font-size: get_sp(14);
+        line-height: get_sp(25);
+        padding: 0 get_sp(19) 0;
+    }
+    p {
+        color: $clr-black;
+        margin-bottom: 15px;
+        text-align: left;
+        @include pc {
+            margin-bottom: get_pc(15);
+        }
+        @include sp {
+            margin-bottom: get_sp(11);
+        }
+        .tlt_num {
+            color: #000000;
+            display: inline-block;
+            line-height: 31px;
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 21px;
+            @include pc {
+                margin-right: get_pc(8);
+                line-height: get_pc(31);
+                font-size: get_pc(21);
+            }
+            @include sp {
+                margin-right: 0;
+                line-height: get_sp(25);
+                font-size: get_sp(14);
+            }
+        }
+    }
+    .txt_chapter_{
+        display: flex;
+        @include sp {
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-right: get_sp(28);
+        }
+        h4 {
+            background-color: $clr-normal-purple;
+            margin-right: 30px;
+            color: $clr-black;
+            padding: 5px;
+            margin-bottom: 0;
+            font-weight: bold;
+            @include pc {
+                margin-right: get_pc(30);
+                padding: get_pc(5);
+            }
+            @include sp {
+                margin-right: 0;
+                padding: get_sp(5);
+                display: block;
+                flex: 0.155;
+            }
+
+        }
+        .thumb {
+            width: 40px;
+            height: 40px;
+            @include pc {
+                width: get_pc(40);
+                height: get_pc(40);
+            }
+            @include sp {
+                width: get_sp(32);
+                height: get_sp(32);
+            }
+        }
+        ul {
+            font-size: 19px;
+            line-height: 30px;
+            color: $clr-black;
+            display: -webkit-box;
+            @include pc {
+                font-size: get_pc(19);
+                line-height: get_pc(30);
+            }
+            @include sp {
+                font-size: get_sp(16);
+                line-height: get_sp(30);
+                display: flex;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex: 0.7;
+            }
+            li {
+                margin-right: 59px;
+                @include pc {
+                    margin-right: get_pc(59);
+                }
+                @include sp {
+                    margin-right: 0;
+                }
+                p {
+                    background-color: $clr-normal-purple;
+                    margin-right: 30px;
+                    color: $clr-black;
+                    padding: 5px;
+                    margin-bottom: 0;
+                    @include pc {
+                        margin-right: get_pc(30);
+                        padding: get_pc(5);
+                    }
+                    @include sp {
+                        margin-right: get_sp(30);
+                        padding: get_sp(5);
+                    }
+                }
+                label {
+                    display: flex;
+                    align-items: center;
+                    @include pc {
+                        display: flex;
+                        align-items: center;
+                    }
+                    @include sp {
+                        display: flex;
+                        align-items: center;
+                    }
+                    input {
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                        margin-right: 15px;
+                        @include pc {
+                            margin-right: get_pc(15);
+                            width: get_pc(25);
+                            height: get_pc(25);
+                        }
+                        @include sp {
+                            margin-right: get_sp(10);
+                            width: get_sp(25);
+                            height: get_sp(25);
+                            margin: 0;
+                        }
+                    }
+                    span {
+                        background-color: $clr-bg;
+                        color: $clr-black;
+                        padding: 5px;
+                        @include pc {
+                            padding: get_pc(5);
+                            text-align: left;
+                            padding: 5px;
+                        }
+                        @include sp {
+                            padding: get_sp(5);
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .txt_chapter_:last-child {
+        h4{
+            margin-bottom: 25px;
+            @include pc {
+                margin-bottom: get_pc(25);
+            }
+            @include sp {
+                margin-bottom: get_pc(18);
+            }
+        }
+    }
+    .tlt_item{
+        &.txt_chapter_ {
+            @include sp {
+                padding-right: 0;
+                justify-content: unset;
+            }
+            h4 {
+                @include sp {
+                    flex: unset;
+                    margin-right: get_sp(30);
+                }
+            }
+        }
+    }
+    .item_input {
+        &.list_radio {
+            display: flex;
+            align-items: center;
+            @include sp {
+                align-items: flex-start;
+            }
+            .tlt_item {
+                background-color: $clr-normal-purple;
+                margin-right: 30px;
+                color: $clr-black;
+                padding: 5px;
+                margin-bottom: 0;
+                font-weight: bold;
+                @include pc {
+                    margin-right: get_pc(30);
+                    padding: get_pc(5);
+                }
+                @include sp {
+                    padding: get_sp(5);
+                }
+            }
+            .item_radio {
+                display: flex;
+                @include sp {
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    flex: 0.8;
+                    display: flex;
+                }
+                label {
+                    margin-right: 59px;
+                    @include pc {
+                        margin-right: get_pc(59);
+                    }
+                    @include sp {
+                        margin-right: get_sp(0);
+                        margin-bottom: get_sp(24);
+                        align-items: center;
+                    }
+                    span {
+                        @include sp {
+                            padding: get_sp(3);
+                            font-size: get_sp(16);
+                            line-height: get_sp(30);
+                        }
+                    }
+                }
+            }
+        }
+        .item_field { 
+            padding: 30px 0 0;
+            margin-bottom: 55px;
+            @include pc {
+                padding: get_pc(30) 0 0;
+                margin-bottom: get_pc(55);
+            }
+            @include sp {
+                padding: get_sp(18) 0 0;
+                margin-bottom: get_sp(43);
+            }
+            textarea {
+                width: 100%;
+                height: 90px;
+                resize: none;
+                @include pc {
+                    height: get_pc(90);
+                }
+                @include sp {
+                    height: get_sp(90);
+                }
+            }
+        }
+    }
+    .txt_textarea {
+        padding: 25px 90px 0;
+        @include pc {
+            padding: get_pc(20) get_pc(90) 0;
+        }
+        @include sp {
+            padding: get_sp(18) 0 0;
+        }
+        textarea {
+            width: 804px;
+            margin: 0 auto;
+            resize: none;
+            margin-bottom: 55px;
+            @include pc {
+                width: get_pc(804);
+                margin-bottom: get_pc(55);
+            }
+            @include sp {
+                width: 100%;
+                margin-bottom: get_sp(43);
+            }
+        }
+    }
+    .btn_outline {
+        a {
+            width: 220px;
+            margin: 0 auto;
+            margin-bottom: 107px;
+            @include pc {
+                width: get_pc(220);
+                margin-bottom: get_pc(107);
+            }
+            @include sp {
+                width: get_sp(186);
+                margin-bottom: get_sp(85);
+            }
+        }
+    }
+    &.hr_section_ {
+        @include sp{
+            padding-bottom: get_sp(20);
+        }
+        ul {
+            li:first-child {
+                background-color: #EBEEFF;
+                color: #000;
+                padding: 5px;
+                margin-bottom: 0;
+                font-weight: bold;
+                width: 67px;
+                margin-bottom: 28px;
+                @include pc {
+                    padding: get_pc(5);
+                    width: get_pc(67);
+                    margin-bottom: get_pc(28);
+                }
+                @include sp {
+                    padding: get_sp(5);
+                    width: get_sp(52);
+                    margin-bottom: get_sp(39);
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            li {
+                p {
+                    .tlt_num {
+                        margin-right: 20px;
+                        font-size: 19px;
+                        line-height: 31px;
+                        font-weight: unset;
+                        @include pc {
+                            margin-right: get_pc(20);
+                            font-size: get_pc(19);
+                            line-height: get_pc(31);
+                        }
+                        @include sp {
+                            margin-right: get_sp(16);
+                            font-size: get_sp(16);
+                            line-height: get_sp(30);
+                        }
+                    }
+                    .green {
+                        color: $clr-green-1;
+                    }
+                    .red {
+                        color: $clr-red-1;
+                    }
+                    .black {
+                        color: $clr-black;
+                        display: block;
+                        margin-left: 45px;
+                        @include pc {
+                            margin-left: get_pc(45);
+                        }
+                        @include sp {
+                            margin-left: get_sp(38);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.progress {
+    display: flex;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 47px;
+    padding: 60px 30px 0 30px;
+    margin-top: 60px;
+    @include pc {
+        padding: get_pc(60) get_pc(30) 0 get_pc(30);
+        padding-left: get_pc(20);
+        margin-bottom: get_pc(47);
+        margin-top: get_pc(60);
+    }
+    @include sp {
+        padding: get_sp(20) get_sp(19) 0;
+        padding-left: get_sp(20);
+        margin-bottom: get_sp(35);
+        margin-top: get_sp(60);
+    }
+    h5 {
+        font-size: 19px;
+        line-height: 20px;
+        color: $clr-black;
+        font-weight: bold;
+        margin-right: 30px;
+        width: 112px;
+        @include pc {
+            font-size: get_pc(19);
+            line-height: get_pc(20);
+            margin-right: get_pc(30);
+            width: get_pc(112);
+        }
+        @include sp {
+            font-size: get_sp(14);
+            line-height: get_sp(20);
+            margin-right: get_sp(16);
+            width: get_sp(106);
+        }
+    }
+    .detail_progress {
+        width: 100%;
+        height: 19px;
+        background-color: $clr-light-gray;
+        @include pc {
+            height: get_pc(19);
+        }
+        @include sp {
+            height: get_sp(15);
+        }
+        .progress_bar {
+            width: 140px;
+            height: 100%;
+            background-color: $clr-medium-gray;
+            @include pc {
+                width: get_pc(140);
+            }
+            @include sp {
+                width: get_sp(75);
+            }
+        }
+    }
+}
+.progress::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    background-color: $clr-bg-tlt;
+    border-radius: 50%;
+    @include pc {
+        width: get_pc(10);
+        height: get_pc(10);
+    }
+    @include sp {
+        width: get_sp(10);
+        height: get_sp(10);
+    }
+}
+.btn_submit {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px 85px 30px;
+    @include pc {
+        padding: get_pc(60) get_pc(30) get_pc(59) get_pc(30);
+    }
+    @include sp {
+        padding: get_sp(20) get_sp(19) get_sp(49);
+    }
+    .btn, .btn_outline {
+        a {
+            width: 315px;
+            border-radius: 5px;
+            @include pc {
+                width: get_pc(315);
+            }
+            @include sp {
+                width: get_sp(150);
+                padding: get_sp(14) 0;
+                @include textSetting(get_sp(12), get_sp(17));
+            }
+        }
+    }
+}
+.hr_section {
+    position: relative;
+    display: inline-block;
+}
+.hr_section::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: -50px;
+    transform: translateX(-50%);
+    background-color: #707070;
+    @include pc {
+        width: 80%;
+        bottom: get_pc(-50);
+    }
+    @include sp {
+        width: 100%;
+        bottom: get_sp(-12);
+    }
+}

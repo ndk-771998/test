@@ -1,0 +1,325 @@
+.list_course {
+    #main {
+        #content {
+            .inner {
+                padding-top: 193px;
+                max-width: 1030px;
+                margin: 0 auto 130px;
+                @include pc {
+                    padding-top: get_pc(193);
+                    max-width: get_pc(1030);
+                    margin: 0 auto get_pc(130);
+                }
+                @include sp {
+                    padding: 0 get_sp(20);
+                    max-width: 100%;
+                    margin: get_sp(42) 0 0;
+                }
+                h3 {
+                    color: $clr-dark-purple;
+                    font-size: 25px;
+                    line-height: 47px;
+                    @include bgsetup("../images/Exclusion1.png",center center, 100%, no-repeat);
+                    width: 178px;
+                    height: 47px;
+                    margin-bottom: 55px;
+                    font-weight: bold;
+                    @include pc {
+                        font-size: get_pc(25);
+                        line-height: get_pc(47);
+                        width: get_pc(178);
+                        height: get_pc(47);
+                        margin-bottom: get_pc(55);
+                    }
+                    @include sp {
+                        margin: 0 auto get_sp(30.5);
+                        font-size: get_sp(20);
+                        line-height: get_sp(40);
+                        width: get_sp(136);
+                        height: get_sp(40);
+                    }
+                }
+                .list_detail {
+                    max-width: 945px;
+                    width: 100%;
+                    margin-left: auto;
+                    @include pc {
+                        max-width: get_pc(945);
+                    }
+                    @include sp {
+                        max-width: 100%;
+                    }
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        @include sp {
+                            flex-direction: column;
+                        }
+                        li {
+                            width: 47.6%;
+                            align-self: stretch;
+                            @include sp {
+                                width: 100%;
+                                margin-bottom: get_sp(60);
+                            }
+                            .item_content {
+                                height: 100%;
+                                h2 {
+                                    padding: 26px 0;
+                                    text-align: center;
+                                    background-color: $clr-dark-purple;
+                                    @include textSetting(22px, 30px, $clr-bg, 700);
+                                    @include pc {
+                                        @include textSetting(get_pc(22), get_pc(30), $clr-bg, 700);
+                                        padding: get_pc(26) 0;
+                                    }
+                                    @include sp {
+                                        @include textSetting(get_sp(19), get_sp(20), $clr-bg, 700);
+                                        padding: get_sp(29) 0;
+                                    }
+                                }
+                                .content_detail {
+                                    border: 3px solid $clr-dark-purple;
+                                    border-top: none;
+                                    padding: 22px 12px 12px;
+                                    @include pc {
+                                        padding: get_pc(22) get_pc(12) get_pc(12);
+                                    }
+                                    @include sp {
+                                        padding: get_sp(23) get_pc(20) get_pc(20);
+                                    }
+                                    h4 {
+                                        @include textSetting(20px, 30px, $clr-black, 700, 0.6px);
+                                        text-align: center;
+                                        position: relative;
+                                        margin-bottom: 17px;
+                                        display: inline-block;
+                                        @include pc {
+                                            margin-bottom: get_pc(17);
+                                            @include textSetting(get_pc(20), get_pc(30), $clr-black, 700, get_pc(0.6));
+                                        }
+                                        @include sp {
+                                            margin-bottom: get_sp(17);
+                                            @include textSetting(get_sp(19), get_sp(30), $clr-black, 700, 0);
+                                        }
+                                        &::before, &::after {
+                                            content: '';
+                                            position: absolute;
+                                            width: 1px;
+                                            height: 34px;
+                                            bottom: 0;
+                                            background-color: $clr-black;
+                                            @include pc {
+                                                height: get_pc(34);
+                                            }
+                                            @include sp {
+                                                height: get_sp(34);
+                                            }
+                                        }
+                                        &::before {
+                                            left: -20px;
+                                            transform: rotate(-20deg);
+                                            @include pc {
+                                                left: get_pc(-20);
+                                            }
+                                            @include sp {
+                                                left: get_sp(-10);
+                                            }
+                                        }
+                                        &::after {
+                                            right: -20px;
+                                            transform: rotate(20deg);
+                                            @include pc {
+                                                right: get_pc(-20);
+                                            }
+                                            @include sp {
+                                                right: get_sp(-10);
+                                            }
+                                        }
+                                        span {
+                                            display: block;
+                                        }
+                                    }
+                                    .price {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-bottom: 25px;
+                                        @include pc {
+                                            margin-bottom: get_pc(25);
+                                        }
+                                        @include sp {
+                                            margin-bottom: get_sp(24);
+                                        }
+                                        h5 {
+                                            font-size: 70px;
+                                            font-weight: bold;
+                                            @include pc {
+                                                font-size: get_pc(70);
+                                            }
+                                            @include sp {
+                                                font-size: get_sp(60);
+                                            }
+                                        }
+                                        p {
+                                            font-size: 14px;
+                                            @include pc {
+                                                font-size: get_pc(14);
+                                            }
+                                            @include sp {
+                                                font-size: get_sp(14);
+                                            }
+                                            span {
+                                                display: block;
+                                                font-size: 40px;
+                                                font-weight: bold;
+                                                @include pc {
+                                                    font-size: get_pc(40);
+                                                }
+                                                @include sp {
+                                                    font-size: get_sp(35);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn {
+                                        a {
+                                            margin: 0 auto 27px;
+                                            width: 240px;
+                                            padding: 14px 0;
+                                            @include pc {
+                                                margin:0 auto get_pc(27);
+                                                width: get_pc(240);
+                                                padding: get_pc(14) 0;
+                                            }
+                                            @include sp {
+                                                margin:0 auto get_sp(31);
+                                                width: get_sp(200);
+                                                padding: get_sp(14) 0;
+                                            }
+                                        }
+                                    }
+                                    .thumb {
+                                        width: 306px;
+                                        margin: 0 auto 12px;
+                                        @include pc {
+                                            margin:0 auto get_pc(12);
+                                            width: get_pc(306);
+                                        }
+                                        @include sp {
+                                            margin:0 auto get_sp(21);
+                                            width: get_sp(306);
+                                        }
+                                        img {
+                                            @include sp {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .txt {
+                                        padding: 25px 19px;
+                                        background-color: $clr-gray-1;
+                                        height: 197px;
+                                        @include pc {
+                                            height: get_pc(197);
+                                            padding: get_pc(25) get_pc(19);
+                                        }
+                                        @include sp {
+                                            height: get_sp(148);
+                                            padding: get_sp(20) get_sp(10);
+                                        }
+                                        p {
+                                            text-align: left;
+                                            @include textSetting(19px, 30px, $clr-black, 400, -0.5px);
+                                            @include pc {
+                                                @include textSetting(get_pc(19), get_pc(30), $clr-black, 400, get_pc(-0.5));
+                                            }
+                                            @include sp {
+                                                @include textSetting(get_sp(14), get_sp(22), $clr-black, 400, get_sp(-0.5));
+                                            }
+                                            &::before {
+                                                content: '•';
+                                                margin-right: 3px;
+                                                @include pc {
+                                                    margin-right: get_pc(3);
+                                                }
+                                                @include sp {
+                                                    margin-right: get_sp(3);
+                                                }
+                                            }
+                                            &.note {
+                                                color: $clr-dark-purple;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:first-child {
+                                .item_content {
+                                    border-color: $clr-bg;
+                                    .content_detail {
+                                        border: 3px solid $clr-green;
+                                        border-top: none;
+                                        padding-top: 22px;
+                                        @include pc {
+                                            padding-top: get_pc(22);
+                                        }
+                                        @include sp {
+                                            padding-top: get_sp(23);
+                                        }
+                                    }
+                                }
+                                h2 {
+                                    background-color: $clr-green;
+                                }
+                                .btn {
+                                    a {
+                                        border: 1px solid $clr-green;
+                                        background-color: $clr-green;
+                                        &:hover {
+                                            background-color: $clr-bg;
+                                            color: $clr-green;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                .item_content {
+                                    position: relative;
+                                    .content_detail {
+                                        border: 3px solid $clr-dark-purple;
+                                        border-top: none;
+                                        padding-top: 22px;
+                                        @include pc {
+                                            padding-top: get_pc(22);
+                                        }
+                                        @include sp {
+                                            padding-top: get_sp(23);
+                                        }
+                                    }
+                                    .discount {
+                                        position: absolute;
+                                        width: 106px;
+                                        left: -5px;
+                                        top: -21px;
+                                        @include pc {
+                                            width: get_pc(106);
+                                            top: get_pc(-21);
+                                            left: get_pc(-5);
+                                        }
+                                        @include sp {
+                                            width: get_sp(106);
+                                            top: get_sp(-21);
+                                            left: get_sp(-5);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

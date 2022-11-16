@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    height: 100%;
+    border: 1px solid $clr-medium-gray;
+    width: 250px;
+    left: 0;
+    top: 0;
+    background-color: $clr-bg;
+    @include pc {
+        width: get_pc(250);
+    }
+    @include sp {
+        width: 100%;
+        height: get_sp(56);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        box-shadow: 2px 2px 10px rgba(83, 99, 189, 0.102);
+        border: unset;
+    }
+    .logo {
+        width: 212px;
+        height: 85px;
+        margin: 0 auto 44px;
+        @include pc {
+            margin: 0 auto get_pc(44);
+            width: get_pc(212);
+            height: get_pc(85);
+        }
+        @include sp {
+            margin: 0;
+            width: get_sp(140);
+            height: get_sp(56);
+        }
+    }
+}
